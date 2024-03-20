@@ -9,7 +9,7 @@ window.onload = function() {
     downloadLinks.forEach(function(link) {
         link.addEventListener('click', function(event) {
             var modName = event.target.innerText;
-            var confirmDownload = confirm('Do you want to download ' + modName + '?');
+            var confirmDownload = confirm('Do you want to download ' + modName + '? this will redirects you to another webpage');
             if (!confirmDownload) {
                 event.preventDefault();
             }
