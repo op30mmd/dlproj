@@ -6,20 +6,28 @@ body {
   justify-content: center;
   height: 500vh;
   background-color: #f0f0f0;
+  max-width: 100%;
+  box-sizing: border-box;
   
 }
 .download-button {
   text-align: center;
   margin: 10px;
+  max-width: 100%;
+  box-sizing: border-box;
   
 }
 .download-button a {
   text-decoration: none;
   color: white;
+  max-width: 100%;
+  box-sizing: border-box;
   
 }
 .download-button p {
   margin-bottom: 5px;
+  max-width: 100%;
+  box-sizing: border-box;
   
 }
 button {
@@ -32,10 +40,14 @@ button {
   color: white;
   transition: background-color 0.3s ease;
   margin: 5px;
+  max-width: 100%;
+  box-sizing: border-box;
   
 }
 button:hover {
   background-color: #0056b3;
+  max-width: 100%;
+  box-sizing: border-box;
   
 }
 header {
@@ -47,6 +59,8 @@ header {
   font-weight: bold;
   width: 100%;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  max-width: 100%;
+  box-sizing: border-box;
   
 }
 footer {
@@ -57,9 +71,14 @@ footer {
   color: #fff;
   text-align: center;
   box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
+  max-width: 100%;
+  box-sizing: border-box;
   
 }
 pre {
-  border-radius: 10px;
-  
+    max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+    box-sizing: border-box; /* Includes padding and borders in the element's total width */
+    overflow-x: auto; /* Adds horizontal scrolling */
+    border-radius: 10px; /* Rounded corners */
+    /* Other styles */
 }
