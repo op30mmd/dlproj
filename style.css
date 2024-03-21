@@ -1,56 +1,65 @@
 body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 350vh;
-            background-color: #f0f0f0;
-        }
-        .download-button {
-            text-align: center;
-            margin: 10px;
-        }
-        .download-button a {
-            text-decoration: none;
-            color: white;
-        }
-        .download-button p {
-            margin-bottom: 5px;
-        }
-        button {
-            cursor: pointer;
-            border: none;
-            outline: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            background-color: #007bff;
-            color: white;
-            transition: background-color 0.3s ease;
-            margin: 5px;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 2em;
-            font-weight: bold;
-            width: 100%;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-        }
-        footer {
-            margin-top: auto;
-            padding: 10px;
-            width: 100%;
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
-        }
-        pre {
-            border-radius: 10px;
-        }
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350vh;
+  background-color: #f0f0f0;
+  
+}
+.download-button {
+  text-align: center;
+  margin: 10px;
+  
+}
+.download-button a {
+  text-decoration: none;
+  color: white;
+  
+}
+.download-button p {
+  margin-bottom: 5px;
+  
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+  
+}
+button:hover {
+  background-color: #0056b3;
+  
+}
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  
+}
+footer {
+  margin-top: auto;
+  padding: 10px;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.2);
+  
+}
+pre {
+  border-radius: 10px;
+  
+}
