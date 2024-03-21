@@ -59,49 +59,11 @@ if (!getCookie('welcomeMessageShown')) {
 
 // Attach click event listeners to all download links and cookie consent logic after the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', function() {
+    // check if DOM attached
+    console.log("DOMContentLoaded!");
     // Handle download links
     var downloadLinks = document.querySelectorAll('a[download]');
     downloadLinks.forEach(function(link) {
         link.addEventListener('click', handleDownloadConfirmation);
     });
-
-    // Cookie consent logic
-    var cookieConsentBanner = document.getElementById('cookieConsentBanner');
-    if (cookieConsentBanner) { // Check if the element exists
-        var acceptButton = document.getElementById('cookieAccept');
-        var rejectButton = document.getElementById('cookieReject');
-        var closeButton = document.getElementById('cookieClose');
-
-        // Function to hide the consent banner
-        function hideConsentBanner() {
-            cookieConsentBanner.style.display = 'none';
-        }
-
-        // Check if the consent has already been given or rejected
-        var cookieConsent = getCookie('cookieConsent');
-        if (cookieConsent === 'accepted' || cookieConsent === 'rejected') {
-            hideConsentBanner();
-        } else {
-            // Show the cookie consent banner
-            cookieConsentBanner.style.display = 'block';
-        }
-
-        // Event listener for "I Accept"
-        acceptButton.addEventListener('click', function() {
-            setCookie('cookieConsent', 'accepted', 24);
-            hideConsentBanner();
-        });
-
-        // Event listener for "Reject"
-        rejectButton.addEventListener('click', function() {
-            setCookie('cookieConsent', 'rejected', 24);
-            hideConsentBanner();
-        });
-
-        // Event listener for closing the banner
-        closeButton.addEventListener('click', function() {
-            setCookie('cookieConsent', 'rejected', 24);
-            hideConsentBanner();
-        });
-    }
-});
+}
