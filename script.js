@@ -1,18 +1,31 @@
 // scripts.js
 
-// Display a welcome message when the page loads
+// Display a SweetAlert welcome message when the page loads
 window.onload = function() {
-    alert('Welcome to the GTA:SA Mods Collection!');
+    swal({
+        title: "Welcome!",
+        text: "Welcome to the GTA:SA Mods Collection!",
+        icon: "success",
+        button: "Let's go!",
+    });
 
     // Attach click event listeners to all download links
     var downloadLinks = document.querySelectorAll('a[download]');
     downloadLinks.forEach(function(link) {
         link.addEventListener('click', function(event) {
             var modName = event.target.innerText;
-            var confirmDownload = confirm('Do you want to download ' + modName + '? this will redirects you to another webpage');
-            if (!confirmDownload) {
-                event.preventDefault();
-            }
+            swal({
+                title: "Are you sure?",
+                text: "Do you want to download " + modName + "?",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true,
+            })
+            .then((willDownload) => {
+                if (!willDownload) {
+                    event.preventDefault();
+                }
+            });
         });
     });
 };
