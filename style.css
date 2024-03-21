@@ -80,5 +80,5 @@ pre {
     box-sizing: border-box; /* Includes padding and borders in the element's total width */
     overflow-x: auto; /* Adds horizontal scrolling */
     border-radius: 10px; /* Rounded corners */
-    /* Other styles */
+
 }
