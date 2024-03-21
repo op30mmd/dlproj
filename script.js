@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Show the SweetAlert confirmation dialog
             swal({
                 title: "Are you sure?",
-                text: "Do you want to download " + modName + "?",
+                text: "Do you want to " + modName + "?",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
