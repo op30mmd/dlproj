@@ -1,14 +1,35 @@
 body {
-  font-family: Arial, sans-serif;
+  min-height: 100vh; /* Ensures body fills the viewport height */
+  margin: 0; /* Remove default margin */
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+ /* Style the header and footer to stay fixed */
+header, .content, footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 1000vh;
-  background-color: #f0f0f0;
+  padding: 1rem; /* Add some padding for aesthetics */
   max-width: 100%;
   box-sizing: border-box;
-  
+}
+header, footer {
+  flex: 0 0 auto; /* Makes header and footer fixed height */
+  /* position: sticky;
+  top: 0;
+  bottom: 0; */
+  background-color: black; /* Optional background color */
+  color: white;
+}
+
+    /* Style the content section to be scrollable */
+.content {
+  flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 1rem; /* Add some padding for aesthetics */
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .download-button {
   text-align: center;
@@ -50,7 +71,7 @@ button:hover {
   box-sizing: border-box;
   
 }
-header {
+/* header {
   background-color: #333;
   color: #fff;
   padding: 10px 0;
@@ -74,7 +95,7 @@ footer {
   max-width: 100%;
   box-sizing: border-box;
   
-}
+} */
 pre {
     max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
     box-sizing: border-box; /* Includes padding and borders in the element's total width */
