@@ -4,6 +4,7 @@ body {
   margin: 0; /* Remove default margin */
   max-width: 100%;
   box-sizing: border-box;
+  justify-content: center;
 }
 
  /* Style the header and footer to stay fixed */
@@ -114,5 +115,7 @@ pre {
     /* Other mobile-specific styles */
   max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
   box-sizing: border-box; /* Includes padding and borders in the element's total width */
+  font-family: Arial, sans-serif;
+  justify-content: center;
   }
 }
