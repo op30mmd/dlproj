@@ -16,13 +16,17 @@ header, .content, footer {
   max-width: 100%;
   box-sizing: border-box;
 }
-header, footer {
-  flex: 0 0 auto; /* Makes header and footer fixed height */
   /* position: sticky;
   top: 0;
   bottom: 0; */
+header, footer {
+  display: flex;
+  flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
+  justify-content: space-between;
   background-color: black; /* Optional background color */
   color: white;
+  align-items: center;
+  padding: 1rem 2rem;
   max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
   box-sizing: border-box; /* Includes padding and borders in the element's total width */
 }
