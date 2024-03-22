@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         swal({
             title: "Are you sure?",
-            text: "Do you want to download " + modName + "?",
+            text: "Do you want to " + modName + "?",
             icon: "warning",
             buttons: true,
             dangerMode: true,
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
 
             // Update the 'welcomeMessageShown' timestamp in local storage
-            localStorage.setItem('welcomeMessageShown', now);
+           localStorage.setItem('welcomeMessageShown', now);
         }
     }
 });
