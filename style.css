@@ -88,6 +88,7 @@ pre {
   bottom: 0; /* Position at the bottom of the screen */
   width: 100%; /* Span the entire width */
   background-color: #f2f2f2; /* Light gray background */
+  color: black;
   padding: 10px;
   display: flex; /* Arrange buttons horizontally */
   justify-content: space-between; /* Space buttons evenly */
