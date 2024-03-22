@@ -1,4 +1,5 @@
 body {
+  font-family: Arial, sans-serif;
   min-height: 100vh; /* Ensures body fills the viewport height */
   margin: 0; /* Remove default margin */
   max-width: 100%;
@@ -21,6 +22,8 @@ header, footer {
   bottom: 0; */
   background-color: black; /* Optional background color */
   color: white;
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
 }
 
     /* Style the content section to be scrollable */
@@ -97,17 +100,19 @@ footer {
   
 } */
 pre {
-    max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
-    box-sizing: border-box; /* Includes padding and borders in the element's total width */
-    overflow-x: auto; /* Adds horizontal scrolling */
-    border-radius: 10px; /* Rounded corners */
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
+  overflow-x: auto; /* Adds horizontal scrolling */
+  border-radius: 10px; /* Rounded corners */
 
 }
 @media only screen and (max-width: 768px) {
   /* Mobile-specific styles for the header */
   header {
-    margin: 0; /* Remove excessive margins */
-    padding: 10px; /* Adjust padding if needed */
+  margin: 0; /* Remove excessive margins */
+  padding: 10px; /* Adjust padding if needed */
     /* Other mobile-specific styles */
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
   }
 }
