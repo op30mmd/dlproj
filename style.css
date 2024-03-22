@@ -82,3 +82,49 @@ pre {
     border-radius: 10px; /* Rounded corners */
 
 }
+.cookie-consent-banner {
+  position: fixed; /* Fixed position at the bottom */
+  left: 0; /* Align to left side of the screen */
+  bottom: 0; /* Position at the bottom of the screen */
+  width: 100%; /* Span the entire width */
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 10px;
+  display: flex; /* Arrange buttons horizontally */
+  justify-content: space-between; /* Space buttons evenly */
+  align-items: center; /* Align content vertically */
+  z-index: 999; /* Ensure popup is displayed above other elements */
+}
+
+.cookie-consent-banner p {
+  margin: 0; /* Remove margin for better spacing */
+}
+
+.cookie-consent-banner a {
+  color: #000; /* Text color */
+  text-decoration: underline; /* Underline for links */
+}
+
+.cookie-consent-banner button {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #fff; /* Button background color */
+}
+
+#cookieAccept {
+  background-color: #4CAF50; /* Green for accept */
+  color: #fff; /* White text */
+}
+
+#cookieReject {
+  background-color: #f44336; /* Red for reject */
+  color: #fff; /* White text */
+}
+
+#cookieClose {
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 10px; /* Spacing for close button */
+}
