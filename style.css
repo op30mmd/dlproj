@@ -93,15 +93,21 @@ pre {
   justify-content: space-between; /* Space buttons evenly */
   align-items: center; /* Align content vertically */
   z-index: 999; /* Ensure popup is displayed above other elements */
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
 }
 
 .cookie-consent-banner p {
   margin: 0; /* Remove margin for better spacing */
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
 }
 
 .cookie-consent-banner a {
   color: #000; /* Text color */
-  text-decoration: underline; /* Underline for links */
+  text-decoration: underline; /* Underline for links*/
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
 }
 
 .cookie-consent-banner button {
@@ -110,16 +116,22 @@ pre {
   border-radius: 3px;
   cursor: pointer;
   background-color: #fff; /* Button background color */
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
 }
 
 #cookieAccept {
   background-color: #4CAF50; /* Green for accept */
-  color: #fff; /* White text */
+  color: #FFF; /* White text */
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
 }
 
 #cookieReject {
   background-color: #f44336; /* Red for reject */
   color: #fff; /* White text */
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
 }
 
 #cookieClose {
@@ -127,4 +139,6 @@ pre {
   font-weight: bold;
   cursor: pointer;
   margin-left: 10px; /* Spacing for close button */
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
 }
