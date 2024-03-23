@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Visitors</title>
+  <script src="https://cdn.socket.io/socket.io-3.1.1.min.js"></script>
+  <script src="stts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(() => {
+      const socket = io();
+
+      // When the server sends the number of online visitors, update the HTML
+      socket.on('online visitors', (count) => {
+        $('#online-visitors').text(`Online visitors: ${count}`);
+      });
+    });
+  </script>
+</head>
+<body>
+  <h1 id="online-visitors">Online visitors: 0</h1>
+</body>
+</html>
