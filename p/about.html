@@ -95,9 +95,24 @@ function myFunction() {
     text-align: left;
   }
 }
+header, footer {
+  display: block;
+  /*flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
+  justify-content: space-between;
+  background-color: black; /* Optional background color */
+  color: white;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
+  text-align: center;
+}
     </style>
 </head>
 <body>
+  <header>
+    GTA:SA Mods Collection
+  </header>
     <div class="container">
         <h1>About Us</h1>
         <p>
@@ -110,5 +125,13 @@ function myFunction() {
             We value your feedback and suggestions. Please feel free to contact us for any inquiries or support.
         </p>
     </div>
+    <footer>
+        <p>&copy; 2024 GTA:SA Mods. All rights reserved.</p>
+        <p><b>all links are original so im just recommending them</b></p>
+        <p>Made with ❤ by Mamation</p>
+        <a href="https://t.me/mineheaven_ch" target="_blank" rel="noopener noreferrer">
+   <img src="res/icons8-telegram.svg" alt="Telegram icon">
+ </a>
+    </footer>
 </body>
 </html>
