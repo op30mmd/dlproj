@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ping Test</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ping Test</h1>
+    <button id="pingButton">Click to start ping</button>
+    <p id="responseTime"></p>
+    <script>
+      const button = document.getElementById("pingButton");
+      const responseTimeEl = document.getElementById("responseTime");
+
+      function sendPing() {
+        const startTime = new Date().getTime();
+
+        fetch("/ping")
+          .then((response) => response.text())
+          .then((text) => {
+            const endTime = new Date().getTime();
+            const responseTime = endTime - startTime;
+            responseTimeEl.textContent = `Server responded in ${responseTime}ms`;
+          })
+          .catch((error) => {
+            console.error("Ping failed:", error);
+            responseTimeEl.textContent = "Ping failed";
+          });
+      }
+
+      button.addEventListener("click", sendPing);
+    </script>
+  </body>
+</html>
