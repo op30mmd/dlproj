@@ -5,6 +5,8 @@ body {
   max-width: 100%;
   box-sizing: border-box;
   justify-content: center;
+  background-color: #f0f8ff; /* Light blue background color */
+  color: #000080; /* Dark blue text color */
 }
 
  /* Style the header and footer to stay fixed */
@@ -23,7 +25,7 @@ header, footer {
   display: flex;
   flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
   justify-content: space-between;
-  background-color: black; /* Optional background color */
+  background-color: #000080; /* Dark blue background color */
   color: white;
   align-items: center;
   padding: 1rem 2rem;
@@ -109,6 +111,8 @@ pre {
   box-sizing: border-box; /* Includes padding and borders in the element's total width */
   overflow-x: auto; /* Adds horizontal scrolling */
   border-radius: 10px; /* Rounded corners */
+  background-color: #f0f8ff; /* Light blue background color for pre elements */
+  color: #000080; /* Dark blue text color for pre elements */
 
 }
 @media only screen and (max-width: 768px) {
@@ -125,7 +129,7 @@ pre {
 }
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #000080; /* Dark blue background color */
   overflow: hidden;
 }
 
@@ -148,7 +152,7 @@ pre {
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #007bff;
+  background-color: #007bff; /* Blue active link color */
   color: white;
 }
 
