@@ -7,6 +7,7 @@ body {
   justify-content: center;
   background-color: #f0f8ff; /* Light blue background color */
   color: #000080; /* Dark blue text color */
+  word-wrap: break-word;
 }
 
  /* Style the header and footer to stay fixed */
