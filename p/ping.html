@@ -14,8 +14,7 @@
         min-height: 100vh;
         margin: 0;
         text-align: center;
-        max-width: 100%;
-        box-sizing: border-box;
+        max-height: 100%;
       }
       button {
         padding: 10px 20px;
@@ -103,7 +102,7 @@
               box-sizing: border-box;
           }
     }
-         header, footer {
+         header {
            display: block;
            /*flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
            justify-content: space-between;
@@ -113,8 +112,21 @@
            padding: 1rem 2rem;
            max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
            box-sizing: border-box; /* Includes padding and borders in the element's total width */
-           text-align: center;
+           top: 0;
        }
+         footer {
+           display: block;
+           /*flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
+           justify-content: space-between;
+           background-color: #000080; /* Dark blue background color */
+           color: white;
+           align-items: center;
+           padding: 1rem 2rem;
+           max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+           box-sizing: border-box; /* Includes padding and borders in the element's total width */
+           position: fixed;
+           bottom: 0;
+         }
   </style>
     <div class="topnav" id="myTopnav">
     <a href="https://op30mmd.github.io/dlproj" class="active">Home</a>
