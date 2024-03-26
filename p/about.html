@@ -103,7 +103,8 @@ function myFunction() {
               text-align: left;
           }
     }
-           header {
+           @media screen and (max-width: 600px) {
+             header {
            display: block;
            /*flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
            justify-content: space-between;
@@ -132,6 +133,7 @@ function myFunction() {
            left: 0;
            right: 0;
        }
+    }
     </style>
 </head>
 <body>
