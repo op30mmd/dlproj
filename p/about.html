@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
         /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
@@ -18,17 +19,21 @@
         .topnav {
             background-color: #000080; /* Dark blue background color */
             overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
         }
 
         /* Style the links inside the navigation bar */
         .topnav a {
-            float: left;
             display: block;
             color: #f2f2f2;
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
             font-size: 17px;
+            flex: 1 1 auto;
         }
 
         /* Change the color of links on hover */
@@ -85,24 +90,9 @@
             line-height: 1.5;
         }
 
-       /* .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        p {
-            line-height: 1.5;
-        }*/
-
         header {
             display: flex;
             flex-direction: column;
-            /*flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
             justify-content: space-between;
             background-color: #000080; /* Dark blue background color */
             color: white;
@@ -117,7 +107,6 @@
         footer {
             display: flex;
             flex-direction: column;
-            /*flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
             justify-content: space-between;
             background-color: #000080; /* Dark blue background color */
             color: white;
