@@ -30,6 +30,31 @@
         a:hover {
             color: #0000cd;
         }
+        header {
+           display: block;
+           /*flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
+           justify-content: space-between;
+           background-color: #000080; /* Dark blue background color */
+           color: white;
+           align-items: center;
+           padding: 1rem 2rem;
+           max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+           box-sizing: border-box; /* Includes padding and borders in the element's total width */
+           top: 0;
+       }
+         footer {
+           display: block;
+           /*flex: 1 1 auto; /* Makes content section fill remaining space and be scrollable */
+           justify-content: space-between;
+           background-color: #000080; /* Dark blue background color */
+           color: white;
+           align-items: center;
+           padding: 1rem 2rem;
+           max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+           box-sizing: border-box; /* Includes padding and borders in the element's total width */
+           position: fixed;
+           bottom: 0;
+         }
     </style>
 </head>
 <body>
