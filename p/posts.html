@@ -127,6 +127,18 @@
               box-sizing: border-box;
           }
     }
+    @media only screen and (max-width: 768px) {
+  /* Mobile-specific styles for the header */
+  header {
+  margin: 0; /* Remove excessive margins */
+  padding: 10px; /* Adjust padding if needed */
+    /* Other mobile-specific styles */
+  max-width: 100%; /* Ensures the box doesn't exceed the viewport width */
+  box-sizing: border-box; /* Includes padding and borders in the element's total width */
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  }
+}
     </style>
     <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
       function myFunction() {
