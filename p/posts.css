@@ -80,9 +80,7 @@
       width: 100%;
       /* Ensures the box doesn't exceed the viewport width */
       box-sizing: border-box;
-      /* Includes padding and borders in the element's total width */
-      position: fixed;
-      bottom: 0;
+      /* Includes padding and borders in the element's total width (no more)*/
     }
 
     /* Add a black background color to the top navigation */
